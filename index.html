@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car detailing Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./script.js" defer></script>
+</head>
+
+<body onload='onloadfunction()'>
+    <header>
+
+
+
+        <div class="bloom-mobile-header" id="header-menu">
+            <div class="toggle-nav">
+                <i class="fa-solid fa-bars" id="openNavButton"></i>
+                <i class="fa-solid fa-xmark" id="closeNavButton"></i>
+            </div>
+
+            <ol class="nav">
+                <li class="item">
+                    <a href="#service">
+                        SERVICES
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#testimonials">
+                        TESTIMONIALS
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#contactUS">
+                        CONTACT US
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#collab-tabs">
+                        OUR COLLABORATIONS
+                    </a>
+                </li>
+            </ol>
+
+            <div class="search-container">
+                <!--     <i class="fa-solid fa-magnifying-glass"></i>
+                <img src="./IMG_7389.PNG" alt="">-->
+            </div>
+
+        </div>
+        <div class='innovative-card'>
+            <ol>
+                <li class="fade">INNOVATIVE</li>
+                <li class="fade">PROTECTIVE</li>
+                <li class="fade">SOLUTIONS</li>
+
+            </ol>
+        </div>
+        <div class="animated-image">
+            <img src='./logo.png' alt='banner image'>
+        </div>
+
+        
+        <div class="car-video hide" id="homeScreen">
+            <video autoplay muted loop id="fashion-video" src="./videos/181537-866999852.mov"
+                aria-label="Intro Video for fashion style">
+                <track kind="captions" src='#' srclang="en" label="English">
+            </video>
+        </div>
+        <div class="car-video show " id="homeScreen2">
+            <video autoplay muted loop id="fashion-video2" src="./videos/181537-866999852.mp4"
+                aria-label="Intro Video for fashion style">
+                <track kind="captions" src='#' srclang="en" label="English">
+            </video>
+        </div>
+
+       
+        <div class='counter-data'>
+            <div class='counting animation cnt1'>
+                <p data-animation="slideInRight" data-animation-delay=".2s">Detailed <span class="counter"
+                        data-target="10000">0</span>+ Vehicles</p>
+            </div>
+
+            <div class='counting animation cnt2'>
+                <p data-animation="slideInLeft" data-animation-delay=".4s">Ceramic coated <span class="counter1"
+                        data-target="500">0</span>+ Vehicles</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+       
+
+
+        <section class="AboutUs">
+            <div class="about">
+                <h2 id="about">WHO WE ARE ?</h2>
+                <p>Discover our innovative protective solutions with advanced ceramic coatings—designed to shield your
+                    vehicle from environmental hazards while enhancing its brilliance. Elevate your car's appearance and
+                    longevity with our cutting-edge ceramic coating services today!</p>
+            </div>
+        </section>
+        <hr>
+        <section class="services animation" id="service">
+            <h2 id='services-heading'>OUR SERVICES</h2>
+
+            <div class="container1" data-animation="slideInRight"  >
+                <div class="card1 crd" id="1">
+                    <div class="front1">
+                        <p class="front-heading">CERAMIC COATING</p>
+                    </div>
+                    <div class="back1"  onclick="cardUnflip(1)">
+                        <p class="back-heading">Protect and perfect your vehicle with our premium ceramic coating,
+                            ensuring lasting brilliance and unparalleled durability.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container2" data-animation="slideInUp" data-animation-delay=".4s" >
+                <div class="card2 crd"  id="2">
+                    <div class="front2">
+                        <p class="front-heading">AUTO DETAILING</p>
+                    </div>
+                    <div class="back2"  onclick="cardUnflip(2)">
+                        <p class="back-heading">
+                            Transform your car with our auto detailing services—where every detail matters and every
+                            ride shines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container3" data-animation="slideInDown" data-animation-delay=".6s">
+                <div class="card3 crd" id="3">
+                    <div class="front3">
+                        <p class="front-heading">COMMERCIAL FLEET SERVICES </p>
+                    </div>
+                    <div class="back3" onclick="cardUnflip(3)">
+                        <p class="back-heading">
+                            Maximize your fleet's efficiency and image with our top-tier detailing services—where every
+                            vehicle reflects your company's commitment to excellence. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container4" data-animation="slideInLeft" data-animation-delay=".8s" >
+                <div class="card4 crd"  id="4">
+                    <div class="front4">
+                        <p class="front-heading">MARINE DIVISION</p>
+                    </div>
+                    <div class="back4" onclick="cardUnflip(4)">
+                        <p class="back-heading">
+                            Preserve and enhance your vessel's beauty with our specialized marine detailing
+                            services—where elite care meets the high seas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <article class='clientVideos' aria-label="client 1 review">
+                <div class="testimonial-videos" id="client-video-1">
+                    <video autoplay muted loop id="testimonial-video-1" src="./videos/cr2.MOV"
+                        aria-label="Intro Video for fashion style">
+                        <track kind="captions" src='#' srclang="en" label="English">
+                    </video>
+                    <p>CAR WASHING</p>
+                </div>
+                <div class="testimonial-videos" id="client-video-2">
+                    <video autoplay muted loop id="testimonial-video-2" src="./videos/cr3.mp4"
+                        aria-label="Intro Video for fashion style">
+                        <track kind="captions" src='#' srclang="en" label="English">
+                    </video>
+                    <p>RIM CLEANING</p>
+
+                </div>
+                <div class="testimonial-videos" id="client-video-3">
+                    <video autoplay muted loop id="testimonial-video-3" src="./videos/cr4.mov"
+                        aria-label="Intro Video for fashion style">
+                        <track kind="captions" src='#' srclang="en" label="English">
+                    </video>
+                    <p>CAR SCRUBBING</p>
+
+                </div>
+                <div class="testimonial-videos" id="client-video-4">
+                    <video autoplay muted loop id="testimonial-video-4" src="./videos/cr5.MP4"
+                        aria-label="Intro Video for fashion style">
+                        <track kind="captions" src='#' srclang="en" label="English">
+                    </video>
+                    <p>INTERIOR DETAILING</p>
+
+                </div>
+            </article>
+
+        </section>
+        <hr>
+        <section class='customer-reviews fade' id='testimonials'>
+            <h2> OUR TESTIMONIALS </h2>
+
+            <article class='clientTestimony' aria-label="client reviews">
+
+                <div class="testimonial" id="client-review">
+                    <video autoplay muted loop id="testimonial-video" src="./videos/cr1.mov"
+                        aria-label="Intro Video for fashion style">
+                        <track kind="captions" src='#' srclang="en" label="English">
+                    </video>
+                </div>
+                <div class="feedback">
+                    <div class="card-review" style="--rating:90">
+                        <div class="rating"></div>
+                        <p class="description"> "My car looks stunning with the new ceramic coating. The shine is
+                            impressive, and I'm thrilled with the added protection. " </p>
+                    </div>
+                </div>
+
+
+            </article>
+
+
+            <article class='clientReviews' id="customerReview" aria-label="client reviews feedbacks">
+                <div class="slideshow-container">
+                    <div class='border-top'></div>
+                    <div class='border-left'></div>
+
+                    <div class="carSlides fade">
+                        <div class="slide-image">
+                            <div class="card " data-animation="flipInY" style="--rating:90">
+                                <div class="icon">😃</div>
+                                <div class="rating"></div>
+                                <div class="title">Excellent Ceramic coating</div>
+                                <p class="description">My car looks stunning with the new ceramic coating. The shine is
+                                    impressive, and I'm thrilled with the added protection. Highly recommended for a
+                                    lasting, glossy finish!</p>
+                            </div>
+
+                            <div class="card show" data-animation="flipInY" data-animation-delay="300ms"
+                                style="--rating:90">
+                                <div class="icon">👨🏻‍🤝‍👨🏼</div>
+                                <div class="rating"></div>
+                                <div class="title">Friendly Behaviour</div>
+                                <p class="description">They did ceramic coating to
+                                    my brand new dodge charger and now its looking even more shining then before. I will
+                                    really recommend to my other friends too.</p>
+                            </div>
+
+                            <div class="card show-more" data-animation="flipInY" data-animation-delay="600ms"
+                                style="--rating:90">
+                                <div class="icon">😁</div>
+                                <div class="rating"></div>
+                                <div class="title">Incredible Work</div>
+                                <p class="description">After the 5-year ceramic coating and detailing, my car feels
+                                    brand new! The shine is incredible, and the attention to detail is impressive. A
+                                    top-notch service I highly recommend.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carSlides fade">
+                        <div class="slide-image">
+                            <div class="card"   style="--rating:100">
+                                <div class="icon">😍</div>
+                                <div class="rating"></div>
+
+                                <div class="title">Worth Investment</div>
+                                <p class="description">After receiving the 7-year ceramic coating on my Dodge
+                                    Challenger, I'm beyond impressed. The sleek finish looks amazing, and it's
+                                    definitely worth the investment.</p>
+                            </div>
+
+                            <div class="card show" 
+                                style="--rating:90">
+                                <div class="icon">😃</div>
+                                <div class="rating"></div>
+                                <div class="title">Meeting Expectations</div>
+                                <p class="description">My car's new 5-year ceramic coating is fantastic! The shine is
+                                    unmatched, and it's low maintenance. Thrilled with the results!</p>
+                            </div>
+
+                            <div class="card show-more" 
+                                style="--rating:90">
+                                <div class="icon">🤝🏻</div>
+                                <div class="rating"></div>
+                                <div class="title">Professional Service</div>
+                                <p class="description">It was a pleasure to deal with Dil. I had some scratches on my
+                                    car and he took care of it!! Great customer service, professional service, highly
+                                    recommend!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carSlides fade">
+                        <div class="slide-image">
+                            <div class="card" style="--rating:95">
+                                <div class="icon">👍🏻</div>
+                                <div class="rating"></div>
+                                <div class="title">Top-notch Service</div>
+                                <p class="description">After the 5-year ceramic coating and detailing, my car feels
+                                    brand new! The shine is incredible, and the attention to detail is impressive. A
+                                    top-notch service I highly recommend.</p>
+                            </div>
+
+                            <div class="card show" 
+                                style="--rating:90">
+                                <div class="icon">🚗</div>
+                                <div class="rating"></div>
+                                <div class="title">Highly recommended</div>
+                                <p class="description">Had the team work on my Toyota Camry. Got a Full Detail and a
+                                    Ceramic coating. The work was absolutely phenomenal. Very knowledgeable guys.</p>
+                            </div>
+
+                            <div class="card show-more"  
+                                style="--rating:90">
+                                <div class="icon">💰</div>
+                                <div class="rating"></div>
+                                <div class="title">Cost effective</div>
+                                <p class="description">I recently washed my car from empire detailing. I am really
+                                    greatly facinated that i had received. They really do a wonderful job. Moreover, it
+                                    is cost effective too. will be returning again</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carSlides fade">
+                        <div class="slide-image">
+                            <div class="card" style="--rating:100">
+                                <div class="icon">👥</div>
+                                <div class="rating"></div>
+
+                                <div class="title">Trustworthy team</div>
+                                <p class="description">
+                                    Got a Paint correction on my Trans AM. These guys did a very good job. The car looks
+                                    brand new. Will definitely come back. You can trust these GUYS! Very Knowledgeable
+                                    team.
+                                </p>
+                            </div>
+
+                            <div class="card show" 
+                                style="--rating:90">
+                                <div class="icon">👌🏻</div>
+                                <div class="rating"></div>
+                                <div class="title">Thorough detailed work</div>
+                                <p class="description">Best in service
+                                    Quality work
+                                    Very thorough and deep cleaning
+                                    Value for money</p>
+                            </div>
+
+                            <div class="card show-more" 
+                                style="--rating:90">
+                                <div class="icon">😁</div>
+                                <div class="rating"></div>
+                                <div class="title">Amazing Work</div>
+                                <p class="description">I have used other detailing companies before, but these guys take
+                                    the cake!
+                                    I have been made a repeat customer for sure! Thank you for your amazing work!</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!--   <a href='#customerReview' class="prev" aria-label="previous article" aria-hidden="true"
+                        onclick="plusReviews(-1)">&#10094;</a>
+                    <a href='#customerReview' class="next" aria-label="next article" aria-hidden="true"
+                        onclick="plusReviews(1)">&#10095;</a>-->
+                    <p class="prev" onclick="plusReviews(-1)">&#10094;</p>
+                    <p class="next" onclick="plusReviews(1)">&#10095;</p>
+
+                    <div class="dots">
+                        <span class="dot1" onclick="currentReviews(1)"></span>
+                        <span class="dot1" onclick="currentReviews(2)"></span>
+                        <span class="dot1" onclick="currentReviews(3)"></span>
+                        <span class="dot1" onclick="currentReviews(4)"></span>
+                    </div>
+
+                    <div class='border-right'></div>
+                    <div class='border-bottom'></div>
+                </div>
+            </article>
+
+
+
+
+        </section>
+        <hr>
+
+        <!--       <section class="map">
+            <h2>Our Location</h2>
+            <iframe class=""
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d333971.7806334122!2d-122.700971!3d49.1596749!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9bdda150555%3A0x7d24eaa9591800b!2sEmpire%20Detailing!5e0!3m2!1sen!2sca!4v1712918330656!5m2!1sen!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>-->
+
+        <section class="contact animation" id='contactUS'>
+            <h2>CONTACT US</h2>
+
+            <div class='contact-content'>
+                <div class='contact-card'>
+                    <h3>CONTACT US</h3>
+                    <p><a href="tel:+7786839600">(778)-683-9600</a></p>
+
+                    <h3>EMAIL US AT</h3>
+                    <p><a href="mailto:empiredetailart@gmail.com">empiredetailart@gmail.com</a></p>
+
+                    <h3>ADDRESS</h3>
+                    <p>13140 80th Avenue, SURREY, BC</p>
+
+
+
+                </div>
+            </div>
+            <div id="modal">
+                <div class="modal-content">
+
+
+                    <div class="container">
+                        <span id="close-modal"><i class="fa-solid fa-xmark"></i></span>
+
+                        <form class="form" action="#">
+                            <input placeholder="Email" class="username input" type="text">
+                            <button id="submit" class="btn" type="submit">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <button id="open-modal" class="btn">SUBSCRIBE TO OUR LATEST DEALS</button>
+
+        </section>
+        <hr>
+
+        <section class="collabs" id="collab-tabs">
+
+            <h2>OUR COLLABORATIONS</h2>
+
+            <button class="section-tabs" id='section1'>
+                <span>CORPORATE CLIENTS</span>
+            </button>
+            <button class="section-tabs" id="section2">
+                <span>COMMERCIAL CLIENTS</span>
+            </button>
+
+        </section>
+        <section class="collaborations corporate" id="corporate" aria-label="corporate clients">
+
+            <article class='bmw' data-animation="zoomIn"  aria-label = "car icons">
+                <img src="./collaborations/bmw.png" alt="bmw car">
+                <p>BMW LANGLEY</p>
+            </article>
+
+            <article class='driving' data-animation="zoomIn" data-animation-delay="100ms" aria-label = "car icons">
+                <img src="./collaborations/DRIVING-FORCE.png" alt="mercedes car">
+                <p>DRIVING FORCE</p>
+            </article>
+
+            <article class='titanium' data-animation="zoomIn" data-animation-delay="200ms" aria-label = "car icons">
+                <img src="./collaborations/TAG-BLUE-2.jpg" alt="titanium">
+                <p>TITANIUM AUTO GROUP</p>
+            </article>
+
+            <article class='jim' data-animation="zoomIn" data-animation-delay="300ms" aria-label = "car icons">
+                <img src="./collaborations/jim.png" alt="jim">
+                <p>Jim Pattison Chrysler Jeep Dodge Surrey</p>
+            </article>
+
+            <article class='honda' data-animation="zoomIn" data-animation-delay="400ms" aria-label = "car icons">
+                <img src="./collaborations/MarvJonesHonda.png" alt="honda">
+                <p>MARV JONES HONDA</p>
+            </article>
+
+            <article class='open-road' data-animation="zoomIn" data-animation-delay="500ms" aria-label = "car icons">
+                <img src="./collaborations/openroadLogo.png" alt="open-road">
+                <p>OPEN ROAD AUTO GROUP</p>
+            </article>
+
+            <article class='exclusive' data-animation="zoomIn" data-animation-delay="600ms" aria-label = "car icons">
+                <img src="./collaborations/exclusive.png" alt="exclusive">
+                <p>EXCLUSIVE MOTOR GROUP</p>
+            </article>
+
+            <article class='mazda' data-animation="zoomIn" data-animation-delay="700ms" aria-label = "car icons">
+                <img src="./collaborations/mazda.png" alt="mazda">
+                <p>FREEWAY MAZDA GROUP</p>
+            </article>
+
+            <article class='landrover' data-animation="zoomIn" data-animation-delay="800ms" aria-label = "car icons">
+                <img src="./collaborations/landrover.png" alt="landrover">
+                <p>LANDROVER JAGUAR LANGLEY</p>
+            </article>
+
+            <article class='toyota' data-animation="zoomIn" data-animation-delay="900ms" aria-label = "car icons">
+                <img src="./collaborations/toyota.png" alt="toyota">
+                <p>WESTMINISTER TOYOTA</p>
+            </article>
+
+
+        </section>
+        <section class="collaborations commercial" id="collab" aria-label="commercial clients">
+
+            <article class='pride' data-animation="zoomIn" aria-label = "car icons">
+                <img src="./collaborations/pride-truck-sales.png" alt="pride">
+                <p>PRIDE TRUCK SALES </p>
+            </article>
+
+
+            <article class='centurian' data-animation="zoomIn" data-animation-delay="100ms" aria-label = "car icons">
+                <img src="./collaborations/s5_logo.png" alt="centurian">
+                <p>Centurian Trucking Inc</p>
+            </article>
+
+            <article class='balena' data-animation="zoomIn" data-animation-delay="200ms" aria-label = "car icons">
+                <img src="./collaborations/balena.png" alt="balena">
+                <p>BALENA TRANSPORT</p>
+            </article>
+
+            <article class='triple' data-animation="zoomIn" data-animation-delay="300ms" aria-label = "car icons">
+                <img src="./collaborations/triple.png" alt="triple">
+                <p>TRIPLE LANE TRANSPORT</p>
+            </article>
+
+            <article class='aman' data-animation="zoomIn" data-animation-delay="400ms" aria-label = "car icons">
+                <img src="./collaborations/Aman-Group-Vector.png" alt="aman">
+                <p>AMAN GROUP</p>
+            </article>
+
+            <article class='garuda' data-animation="zoomIn" data-animation-delay="500ms" aria-label = "car icons">
+                <img src="./collaborations/garuda_transport_ltd_logo.jpeg" alt="garuda">
+                <p>GARUDA TRANSPORT</p>
+            </article>
+
+            <article class='ihaul' data-animation="zoomIn" data-animation-delay="600ms" aria-label = "car icons">
+                <img src="./collaborations/ihaul.png" alt="ihaul">
+                <p>I HAUL FRIEGHT LTD</p>
+            </article>
+
+            <article class='bison' data-animation="zoomIn" data-animation-delay="700ms" aria-label = "car icons">
+                <img src="./collaborations/bison.png" alt="bison">
+                <p>BISON TRANSPORT</p>
+            </article>
+
+            <article class='cascade' data-animation="zoomIn" data-animation-delay="800ms" aria-label = "car icons">
+                <img src="./collaborations/cascade.png" alt="cascade">
+                <p>CASCADE TRUCKS AND EQUIPMENT</p>
+            </article>
+
+            <article class='col' data-animation="zoomIn" data-animation-delay="900ms" aria-label = "car icons">
+                <img src="./collaborations/col.png" alt="col">
+                <p>COAL HARBOUR MARINA</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-vd" id="footer-video">
+            <video autoplay muted loop id="car-road-video" src="./videos/856148-hd_1920_1080_25fps.mov"
+                aria-label="Intro Video for fashion style">
+                <track kind="captions" src='#' srclang="en" label="English">
+            </video>
+        </div>
+        <div class="footer">
+
+
+
+            <div class='footer-brand-logo'>
+                <img src="./logo.png" alt="vanglam logo">
+                <p> At Empire Detailing, discover our advanced ceramic coatings for unmatched protection and shine. </p>
+            </div>
+
+            <div class="footer-contact">
+
+                <div class="footer-icons">
+                    <h1> FOLLOW US </h1>
+                    <a href="https://www.instagram.com/empiredetail/?igsh=MTNiMTUzOGdmbTFtNw%3D%3D" target="_blank"
+                        aria-label="Go to instagram profile"><img src="./images/footer-icons/instagram.png"
+                            alt="instagram" id="instagram" aria-hidden="true"></a>
+                    <a href="https://www.facebook.com/empireartofdetail?mibextid=YMEMSu" target="_blank"
+                        aria-label="Go to facebook profile"><img src="./images/footer-icons/facebook.png" alt="linkedin"
+                            id="linkedin" aria-hidden="true">
+                    </a>
+                    <a href="https://www.tiktok.com/@empiredetailing?_t=8lmIOnOKFKj&_r=1" target="_blank"
+                        aria-label="Go to tiktok profile"><img src="./images/footer-icons/tiktok.png" alt="twitter"
+                            id="twitter" aria-hidden="true"></a>
+                </div>
+
+                <div class="contact-container">
+                    <h1>CONTACT US</h1>
+
+                    <div class="contact-method">
+                        <a href="mailto:empiredetailingart@gmail.com"><img src="./images/footer-icons/gmail.png"
+                                alt="mail-box" id="mail-box"></a>
+                        <a href="tel:+7786839600"><img src="./images/footer-icons/phone-call.png" alt="phone"
+                                id="phone"></a>
+                        <a href="https://wa.me/+17786839600" target="_blank" aria-label="Go to whatsapp account"><img
+                                src="./images/footer-icons/whatsapp.png" alt="whatsapp" id="whatsapp"
+                                aria-hidden="true"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class='working-hours'>
+                <h1>WORKING HOURS</h1>
+                <ul>
+                    <li>MONDAY - SUNDAY </li>
+                    <li id="newsletterClick"> 9:00 AM - 6:00 PM </li>
+
+                    <li><button id="open-box" class="btn">SUBSCRIBE</button></li>
+
+
+
+                </ul>
+            </div>
+
+            <div class='onlineShopping'>
+                <h1>ABOUT US</h1>
+                <ul>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contactUS">Contact US</a></li>
+                    <li><a href="#collab-tabs">Collaborations</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright-footer">
+                <p>2024 &copy; DILKAMAL SINGH</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
